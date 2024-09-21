@@ -10,10 +10,21 @@ import { createTheme, ThemeProvider } from '@mui/material/styles'; // Import the
 const theme = createTheme({
     palette: {
         primary: {
+            // ‘Ulu Green
             main: '#5C9B31',
         },
         secondary: {
+            // Heritage Gold
             main: '#ECA700',
+        },
+    },
+    typography: {
+        fontFamily: 'Avenir Next',
+        h1: {
+            fontFamily: 'Avenir Next Bold',
+        },
+        body1: {
+            fontFamily: 'Avenir Next',
         },
     },
 });
@@ -22,7 +33,7 @@ function App() {
   return (
       <ThemeProvider theme={theme}>
       <Router>
-            <div>
+            <div className="d-flex flex-column min-vh-100">
      <Navbar />
             <Routes>
                 <Route path='/' element={<Home />} />
