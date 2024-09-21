@@ -2,8 +2,15 @@ import React from "react";
 import './App.css';
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
-import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/Home/About";
+import Landing from "./pages/Home/Landing";
+import ContactUs from "./pages/Home/ContactUs";
+import EditTask from "./pages/Home/EditTask";
+import SignUp from "./pages/Home/SignUp";
+import SignIn from "./pages/Home/SignIn";
+import UserPage from "./pages/Home/UserPage";
+import ViewTask from "./pages/Home/ViewTask";
+import ErrorPage from "./pages/routes/ErrorPage";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { createTheme, ThemeProvider } from '@mui/material/styles'; // Import theme modules
 
@@ -36,7 +43,7 @@ function App() {
             <div className="d-flex flex-column min-vh-100">
      <Navbar />
             <Routes>
-                <Route path='/' element={<Home />} />
+                <Route path='/' element={<Landing />} />
                 <Route path='about' element={<About />} />
             </Routes>
             <Footer />
@@ -46,5 +53,7 @@ function App() {
 
   );
 }
+
+
 
 export default App;

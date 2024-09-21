@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Avatar } from '@mui/material';
 
-const Home = () => (
+const Landing = () => (
     <Box sx={{py: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", maxWidth: "lg", mx: "auto",}}
     >
 
@@ -12,4 +12,4 @@ const Home = () => (
     </Box>
 );
 
-export default Home;
+export default Landing;
